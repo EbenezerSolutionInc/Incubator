@@ -1,17 +1,19 @@
 
 {
   "name": "lumina-innovation-platform",
-  "version": "1.0.0",
-  "description": "Canada's National Incubator and Accelerator Platform",
-  "main": "index.js",
+  "version": "1.1.0",
+  "description": "Canada's National Incubator and Accelerator Platform - Node.js Production Ready",
+  "main": "server.js",
+  "type": "module",
   "dependencies": {
+    "express": "^4.18.2",
     "@google/genai": "^1.34.0",
-    "lucide-react": "^0.462.0",
+    "lucide-react": "^0.562.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "scripts": {
-    "start": "npx serve .",
-    "build": "echo 'Standard build process for static assets'"
+    "start": "node server.js",
+    "dev": "node server.js"
   }
 }
